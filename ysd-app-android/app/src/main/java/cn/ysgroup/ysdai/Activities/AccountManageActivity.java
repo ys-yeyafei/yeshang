@@ -49,6 +49,7 @@ public class AccountManageActivity extends MyBaseActivity {
     private TableRow safePassRow;
     private TableRow gestureRow;
 
+
     private TextView realNameText;
     private ImageView realNameRag;
 
