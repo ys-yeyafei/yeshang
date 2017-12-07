@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.ysgroup.ysdai">
+
+    <permission
+        android:name="cn.ysgroup.ysdai.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-sdk android:minSdkVersion="8"></uses-sdk>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="cn.ysgroup.ysdai.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="cn.ysgroup.ysdai.Application.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="label">
+
+        <!-- 配置APP ID -->
+        <!--<meta-data-->
+            <!--android:name="BUGLY_APPID"-->
+            <!--android:value="9ad181e2ef" />-->
+        <!-- 配置APP版本号 -->
+        <!--<meta-data-->
+            <!--android:name="BUGLY_APP_VERSION"-->
+            <!--android:value="1.3.13" />-->
+        <!-- 配置APP渠道号 -->
+        <!-- 配置Bugly调试模式（true或者false） -->
+        <!--<meta-data-->
+        <!--android:name="BUGLY_ENABLE_DEBUG"-->
+        <!--android:value="false" />-->
+
+
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5997e6d5677baa4e0b000bba" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="jcf8gda9vcczm9cwclvrpkya4kcc6pn5" />
+
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.WelcomeActivity"
+            android:launchMode="standard"
+            android:theme="@style/welcomeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.PlaySuccessActivity"
+            android:label="@string/title_activity_preview_one"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.SafeControlActivity"
+            android:label="@string/title_activity_preview_one"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.BackMoneyActivity"
+            android:label="@string/title_activity_preview_one"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ZsPlayActivity"
+            android:label="@string/title_activity_preview_one"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.SelectBankActivity"
+            android:label="@string/title_activity_preview_one"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.GestureCodeActivity"
+            android:label="@string/title_activity_preview_one"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.CustomerActivity"
+            android:label="@string/title_activity_preview_one"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.PreviewOneActivity"
+            android:label="@string/title_activity_preview_one"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.QuicklyPlayActivity"
+            android:label="@string/title_activity_preview_one"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.InvestResultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.RegisterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ImagePagerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ForgetLoginPassActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ForgetSafePassActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.AccountManageActivity"
+            android:label="@string/title_activity_account_manage"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.RealNameAuthActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ModifyLoginPassActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ModifySafePassActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.InvestRecordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.RepayMentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.AutoInvestActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.UserAccDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.HongBaoListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.MyBankCardActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ProjectInvestActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.SelectPicActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogStyleBottom" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ProjectDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.AllPropertyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ChargeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.CashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.SafeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ExplaneActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.HongBaoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.RewardActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- 文章详情 -->
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ArticleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- 文章列表 -->
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ArticleListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ArticleContentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ProjectBasicInforActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ProjectDocumentsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ProjectTenderRecordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ProjectRepaymentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.RechargeRecordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.TxRecordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.RegisterNegotiateActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- 宝付 -->
+        <activity
+            android:name="com.baofoo.sdk.vip.BaofooPayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <!-- 宝付 -->
+
+
+        <!-- 友盟社会化分享 -->
+
+        <activity
+            android:name="cn.ysgroup.ysdai.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 友盟社会化分享 -->
+
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ChargeAndCashActivity"
+            android:label="@string/title_activity_charge_and_cash"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.HongBaoAndRewardActivity"
+            android:label="@string/title_activity_hong_bao_and_reward"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.HbChooseActivity"
+            android:label="@string/title_activity_hb_choose"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.ShareToFriendsActivity"
+            android:label="@string/title_activity_share_to_friends"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.HuoDongActivity"
+            android:label="@string/title_activity_huo_dong"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name="cn.ysgroup.ysdai.Service.UpdateService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.HuoDongDetailActivity"
+            android:label="@string/title_activity_huo_dong_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.FeedBackActivity"
+            android:label="@string/title_activity_feed_back"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="cn.ysgroup.ysdai.Activities.EnlargeActivity" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.SplashActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- jpush配置 -->
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cn.ysgroup.ysdai" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="cn.ysgroup.ysdai" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="8eeca0da326e6c6adbe27bbe" /> <!-- </>值来自开发者平台取得的AppKey -->
+
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="cn.ysgroup.ysdai" />
+            </intent-filter>
+        </service>
+
+        <!-- 美配置恰 -->
+
+        <activity
+            android:name="cn.ysgroup.ysdai.Activities.LoginPasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="cn.ysgroup.ysdai.Activities.MoneyNegotiateActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="cn.ysgroup.ysdai.Activities.BankCardBindVerifyActivity"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme.NoActionBar"/>
+
+
+    </application>
+
+</manifest>

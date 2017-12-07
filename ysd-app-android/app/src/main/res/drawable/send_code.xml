@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="8dp" /><!-- 圆角半径 -->
+
+    <stroke
+        android:width="2dp"
+        android:color="#73a9ff" /><!--矩形的边线  -->
+
+    <size
+        android:width="50dp"
+        android:height="50dp" /><!--矩形的宽高  -->
+
+    <gradient
+        android:endColor="#ffffff"
+        android:startColor="#ffffff" /><!-- 矩形的内部颜色，这里设置成白色，即空心 -->
+</shape>

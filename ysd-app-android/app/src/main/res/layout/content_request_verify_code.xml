@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundWhite"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cn.ysgroup.ysdai.Activities.ForgetLoginPassActivity"
+    tools:showIn="@layout/activity_request_verify_code">
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/table_background_selector"
+        android:stretchColumns="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="20dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/login_phone" />
+
+            <EditText
+                android:maxLines="11"
+                android:id="@+id/forget_login_pass_verify_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_span="2"
+                android:layout_toRightOf="@id/imageView2"
+                android:background="@drawable/edittext_background_selector"
+                android:focusable="true"
+                android:hint="请输入手机号码"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="#AAAAAA"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/s14" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/colorBackgroundWhite" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="20dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/code" />
+
+            <EditText
+                android:id="@+id/forget_login_pass_verify_code"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/iv2"
+                android:background="@drawable/edittext_background_selector"
+                android:hint="请输入验证码"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="#AAAAAA"
+                android:textCursorDrawable="@null"
+                android:inputType="number"
+                android:maxLength="8"
+                android:textSize="@dimen/s14"
+
+                />
+
+            <Button
+                android:id="@+id/forget_login_pass_verify_request_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/button_yellow_selector"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:text="获取验证码"
+                android:textColor="@color/colorWhite"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/colorBackgroundWhite" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="20dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/lock" />
+
+            <EditText
+                android:id="@+id/forget_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_span="2"
+                android:layout_toRightOf="@id/iv3"
+                android:background="@drawable/edittext_background_selector"
+                android:focusable="true"
+                android:hint="请输入新密码（长度8-16位字符，必须包含字母）"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="#AAAAAA"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/s14" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/colorBackgroundWhite" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="20dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/lock" />
+
+            <EditText
+                android:id="@+id/forget_login_password1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_span="2"
+                android:layout_toRightOf="@id/iv4"
+                android:background="@drawable/edittext_background_selector"
+                android:focusable="true"
+                android:hint="再次输入新密码"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="#AAAAAA"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/s14" />
+
+        </RelativeLayout>
+
+
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/forget_login_pass_verify_action_button"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_selector"
+        android:gravity="center"
+        android:text="确认重置"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cn.ysgroup.ysdai.Activities.ModifySafePassActivity"
+    tools:showIn="@layout/activity_modify_safe_pass">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/layout_background_selector"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <EditText
+            android:id="@+id/safe_pass_modify_old"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_background_selector"
+            android:focusable="true"
+            android:hint="请输入原交易密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="#999999"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/s14" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_background_selector"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <EditText
+            android:id="@+id/safe_pass_modify_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_background_selector"
+            android:hint="请输入新密码（由6-16位数字,字母以及符号组成）"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="#999999"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/s14" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_background_selector"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <EditText
+            android:id="@+id/safe_pass_modify_new_twice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_background_selector"
+            android:hint="请再次输入新交易密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="#999999"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/s14" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/safe_pass_modify_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="忘记密码?"
+            android:textColor="@color/red"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/safe_pass_modify_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_selector"
+        android:gravity="center"
+        android:text="修改"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+
+        />
+
+
+</LinearLayout>

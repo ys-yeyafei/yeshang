@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:background="@color/colorWhite"
+    >
+
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="18dp"
+        android:paddingTop="18dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tender_jl_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="134****1243"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:layout_marginTop="13dp"
+            android:layout_below="@id/tender_jl_username"
+            android:id="@+id/tender_jl_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-02-12 12:02"
+            android:textColor="@color/colorGrey"
+            android:textSize="15dp"
+            />
+        <!--<ImageView-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_toRightOf="@id/tender_jl_username"-->
+            <!--android:background="@mipmap/phone_icon"-->
+            <!--android:layout_width="10dp"-->
+            <!--android:layout_height="15dp"/>-->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tender_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:text="0.00"
+        android:textColor="@color/colorLightBlack"
+        android:textSize="15dp"
+        />
+
+
+</RelativeLayout>

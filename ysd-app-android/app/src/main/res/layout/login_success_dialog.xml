@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/login_success_dialog_iv"
+        android:layout_width="180dp"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/login_success" />
+
+    <Button
+        android:id="@+id/login_success_dialog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@id/login_success_dialog_iv"
+        android:layout_alignRight="@id/login_success_dialog_iv"
+        android:layout_below="@id/login_success_dialog_iv"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_background_normal"
+        android:text="立即领取"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_success_dialog_button"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:id="@+id/login_success_dialog_tv"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2秒" />
+        <TextView
+            android:textSize="16sp"
+            android:textColor="#fc8e39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 后自动转入首页" />
+
+    </LinearLayout>
+</RelativeLayout>

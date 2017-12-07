@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <Button
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_write_background_poput"
+            android:textColor="@color/colorGrey"
+            android:text="拨打服务热线？"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            />
+
+        <Button
+            android:id="@+id/poput_phone"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="2dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="呼叫 400-057-7820"
+            android:background="@drawable/button_write_background_poput"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/poput_cancel"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="4dip"
+            android:layout_marginBottom="4dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:background="@drawable/button_write_background_poput"
+            android:textColor="@color/colorDarkBlack"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

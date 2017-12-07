@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD"
+    tools:context="cn.ysgroup.ysdai.Activities.ProjectRepaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDDDDD"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:weightSum="7"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="期数"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="还款日期"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="还款本金"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="还款利息"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                />
+
+        </LinearLayout>
+
+        <cn.ysgroup.ysdai.UI.NoScrollListView
+            android:id="@+id/project_repayment_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorWhite"
+            android:divider="#DDDDDD"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"
+            android:transcriptMode="normal">
+
+        </cn.ysgroup.ysdai.UI.NoScrollListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorGrey"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:weightSum="7"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="小计"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                />
+
+            <TextView
+                android:id="@+id/project_repayment_total_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="435345"
+                android:textColor="@color/colorYellow"
+                android:textSize="14dp"
+                />
+
+            <TextView
+                android:id="@+id/project_repayment_total_capital"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="435345"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                />
+
+            <TextView
+                android:id="@+id/project_repayment_total_interest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="435345"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

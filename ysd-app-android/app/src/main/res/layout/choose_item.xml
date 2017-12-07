@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:background="#f5f5f5"
+        android:textSize="@dimen/s12"
+        android:gravity="center"
+        android:text="若您想使用红包, 则需要增加投资金额"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+</LinearLayout>

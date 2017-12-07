@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="meiqiasdk-3.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/d1941ed067ce49d5c46639ce73c2179b68014621/output/jars/libs/meiqia-v3.3.0.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d1941ed067ce49d5c46639ce73c2179b68014621/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/d1941ed067ce49d5c46639ce73c2179b68014621/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.meiqia/meiqiasdk/3.3.0/ead67877ff6e1fa062dabeac8798bf2348834eae/meiqiasdk-3.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

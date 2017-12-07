@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/acc_detail_item_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="产品申购"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/acc_detail_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2016-1-1 10:12"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="15dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/acc_detail_item_money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="余额： "
+            android:textColor="@color/colorLightBlack"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/acc_detail_item_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/acc_detail_item_money_text"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/acc_detail_item_able_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="100.49"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+</LinearLayout>

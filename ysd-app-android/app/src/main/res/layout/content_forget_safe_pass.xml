@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context="cn.ysgroup.ysdai.Activities.ForgetSafePassActivity"
+              tools:showIn="@layout/activity_forget_safe_pass"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/layout_background_selector"
+        >
+
+        <EditText
+            android:id="@+id/forget_safe_pass_id_number"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_span="2"
+            android:background="@drawable/edittext_background_selector"
+            android:focusable="true"
+            android:hint="请输入身份证后8位数"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="#AAAAAA"
+            android:textCursorDrawable="@null"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/colorWhite"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingTop="10dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:text="你绑定的手机号码："-->
+            <!--android:textColor="@color/colorDarkBlack"-->
+            <!--android:textSize="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/forget_safe_pass_current_phone"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text=""-->
+            <!--android:textColor="@color/colorYellow"-->
+            <!--android:textSize="16dp"/>-->
+
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/forget_safe_pass_verify_button"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_yellow_selector"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="获取验证码"
+            android:textColor="@color/colorWhite"
+            android:textSize="14dp"
+            />
+
+        <EditText
+            android:id="@+id/forget_safe_pass_verify_code"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/forget_safe_pass_verify_button"
+            android:layout_alignBottom="@id/forget_safe_pass_verify_button"
+            android:layout_alignTop="@+id/forget_safe_pass_verify_button"
+            android:background="@drawable/layout_background_selector"
+            android:hint="请输入短信验证码"
+            android:paddingLeft="25dp"
+
+            android:textColor="@color/colorBlack"
+            android:textColorHint="#AAAAAA"
+            android:textCursorDrawable="@null"
+            android:textSize="15dp"
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/layout_background_selector"
+        >
+
+        <EditText
+            android:id="@+id/forget_safe_pass_new_pass"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_span="2"
+            android:background="@drawable/edittext_background_selector"
+            android:focusable="true"
+            android:hint="请输入新的交易密码"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="#AAAAAA"
+            android:textCursorDrawable="@null"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/forget_safe_pass_action_button"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_selector"
+        android:gravity="center"
+        android:text="重置交易密码"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        />
+
+</LinearLayout>

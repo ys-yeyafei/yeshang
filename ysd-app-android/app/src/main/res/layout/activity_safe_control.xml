@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_safe_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="cn.ysgroup.ysdai.Activities.SafeControlActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0px">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/preview_one_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#ffffff"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <cn.ysgroup.ysdai.UI.IconFontTextView
+                android:id="@+id/safe_control_black"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="@string/angle_left"
+                android:textColor="@color/colorBlack"
+                android:textSize="24dp"
+
+                />
+
+            <TextView
+                android:id="@+id/preview_one_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="限额说明"
+                android:textColor="@drawable/black"
+                android:textSize="18dp"
+                android:visibility="visible" />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e2e2e2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s20"
+        android:layout_marginTop="@dimen/s20"
+        android:text="风险控制"
+        android:textColor="@color/red"
+        android:textSize="@dimen/s16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s20"
+        android:layout_marginTop="@dimen/s20"
+        android:text="为了保护您的银行卡资金安全。乐商贷平台联合第三方支付机构-融宝支付采用了新/老卡机制。"
+        android:textSize="@dimen/s14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s20"
+        android:layout_marginTop="@dimen/s20"
+        android:text="限额说明"
+        android:textColor="@color/red"
+        android:textSize="@dimen/s16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s20"
+        android:layout_marginRight="@dimen/s20"
+        android:layout_marginTop="@dimen/s20"
+        android:text="新卡限额：单笔支付上限2万，单日支付总额上限3万。（新卡限额不超过银行规定限额）"
+        android:textSize="@dimen/s14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s20"
+        android:layout_marginRight="@dimen/s20"
+        android:layout_marginTop="@dimen/s20"
+        android:text="老卡限额：单笔支付上限5万，单日支付总额上限20万。（老卡限额与银行规定限额一致）"
+        android:textSize="@dimen/s14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s20"
+        android:layout_marginRight="@dimen/s20"
+        android:layout_marginTop="@dimen/s20"
+        android:text="用户首次通过融宝支付充值后享受新卡额度，第四个自然日可享受老卡额度。"
+        android:textSize="@dimen/s14" />
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/s60"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s60">
+
+        <ImageView
+            android:id="@+id/select_bank_list_item_iv"
+            android:layout_width="@dimen/s35"
+            android:layout_height="@dimen/s35"
+            android:layout_centerVertical="true"
+             />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/select_bank_list_item_iv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/select_bank_list_item_bankname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="农业银行"
+                android:textColor="#333333"
+                android:textSize="@dimen/s15" />
+
+            <TextView
+                android:id="@+id/select_bank_list_item_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="支付限额"
+                android:textColor="#999999"
+                android:textSize="@dimen/s12" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/select_bank_list_item_checkbox"
+            android:layout_width="@dimen/s25"
+            android:layout_height="@dimen/s25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/box_normal"
+            android:button="@null" />
+    </RelativeLayout>
+</RelativeLayout>

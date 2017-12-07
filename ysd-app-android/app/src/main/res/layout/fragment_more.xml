@@ -1,0 +1,284 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0px">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/preview_one_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorWhite"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+                <TextView
+                    android:id="@+id/preview_one_toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="更多"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp"
+                    android:visibility="visible" />
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/fragement_more_activity_notification_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/announce" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv"
+                android:text="消息公告"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/right_lab" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragement_more_activity_about_us_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv1"
+                android:text="关于我们"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/right_lab" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="55dp"
+            android:background="#e2e2e2" />
+
+        <RelativeLayout
+            android:id="@+id/fragement_more_activity_help_center_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/help" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv2"
+                android:text="帮助中心"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/right_lab" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="55dp"
+            android:background="#e2e2e2" />
+
+        <RelativeLayout
+            android:id="@+id/fragement_more_activity_kf_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/iphone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv3"
+                android:text="客户服务"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/more_iv"
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/right_lab" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/more_iv"
+                android:text="工作日 09:00-20:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s13" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_more_feedback_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/idea" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv4"
+                android:text="意见反馈"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/right_lab" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="55dp"
+            android:background="#e2e2e2" />
+
+        <RelativeLayout
+            android:id="@+id/fragement_more_activity_update_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/iv5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/check" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv5"
+                android:text="检查更新"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/iv6"
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/right_lab" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/more_update_current_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/iv6"
+                android:textSize="@dimen/s13" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/app_exit_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/preview_one_up"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+    </LinearLayout>
+</ScrollView>

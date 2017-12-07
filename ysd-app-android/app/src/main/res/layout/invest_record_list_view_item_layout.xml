@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        >
+
+        <TextView
+
+            android:id="@+id/tender_record_item_borrow_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/colorLightBlack"
+            android:textSize="@dimen/s15"
+            android:ellipsize="end"
+            android:maxEms="11"
+            android:singleLine="true"
+            />
+
+        <cn.ysgroup.ysdai.UI.IconFontTextView
+            android:id="@+id/tender_record_item_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tender_record_item_borrow_name"
+            android:text="@string/checkbox"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/s15"
+            />
+
+        <TextView
+            android:id="@+id/tender_record_item_borrow_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="0.00"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/s15"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+       >
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tender_record_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:text="2012-12-12 10：23"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/s14"
+            />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tender_record_item_profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:text="+0.00"
+            android:textColor="@color/red"
+            android:textSize="@dimen/s14"
+            />
+        <ImageView
+
+            android:layout_alignParentBottom="true"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/inverst_trigonometry"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

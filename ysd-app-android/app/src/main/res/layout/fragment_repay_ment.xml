@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context="cn.ysgroup.ysdai.Fragments.RepayMentFragment">
+
+    <RelativeLayout
+        android:id="@+id/repay_ment_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s30">
+
+        <TextView
+            android:textSize="@dimen/s14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目/回款时间" />
+        <TextView
+            android:textSize="@dimen/s14"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回款本金/收益" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_below="@+id/repay_ment_rl"
+        android:id="@+id/repay_ment_swip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.ysgroup.ysdai.UI.LoadMoreListView
+            android:id="@+id/repay_ment_list_view"
+            style="@style/scrollbar_shape_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#f5f5f5"
+            android:dividerHeight="5dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollbarSize="5dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="none"
+            android:smoothScrollbar="true">
+
+        </cn.ysgroup.ysdai.UI.LoadMoreListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/repay_ment_nothing_img"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/list_nothing"
+        android:visibility="gone" />
+</RelativeLayout>
